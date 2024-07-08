@@ -32,8 +32,10 @@ jobs:
       run: chmod +x gradlew
 
     # Execute gradlew command for running cucumber test 
-    - name: Execute Test
-      run: ./gradlew webTest, ./gradlew apiTest
+    - name: Execute Test Web
+      run: ./gradlew webTest
+    - name: Execute Test Api
+      run: ./gradlew apiTest
 
     # Archive test result
     - name: Archive Test Result
